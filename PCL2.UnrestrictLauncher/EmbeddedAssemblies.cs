@@ -12,7 +12,8 @@ namespace PCL2.UnrestrictLauncher
     {
         private static readonly string[] ResourceNames =
         {
-            "NAudio", "Newtonsoft.Json", "Ookii.Dialogs.Wpf", "Imazen.WebP",
+            // PCL's own resolver also extracts libwebp.dll when loading Imazen.WebP.
+            "NAudio", "Newtonsoft.Json", "Ookii.Dialogs.Wpf",
             "CacheCow.Common", "CacheCow.Client.FileStore", "CacheCow.Client",
             "ThrottleDebounce", "System.Net.Http.Formatting", "Microsoft.Win32.Registry",
             "PCLCS", "MeloongCore.Wpf", "MeloongCore"
